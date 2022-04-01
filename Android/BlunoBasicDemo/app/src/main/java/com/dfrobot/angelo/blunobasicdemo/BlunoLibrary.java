@@ -37,7 +37,7 @@ public abstract  class BlunoLibrary  extends Activity{
 
 	private Context mainContext=this;
 
-	//ÐèÒªµÄÉêÇëÈ¨ÏÞ
+	
 	private  String [] mStrPermission = {
 			Manifest.permission.ACCESS_FINE_LOCATION
 	};
@@ -598,7 +598,7 @@ public abstract  class BlunoLibrary  extends Activity{
 	}
 
 	/**
-	 * ÅÐ¶ÏÇëÇóµ¥¸öÈ¨ÏÞ
+	 * ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½óµ¥¸ï¿½È¨ï¿½ï¿½
 	 * @param permissions
 	 * @return
 	 */
@@ -611,7 +611,7 @@ public abstract  class BlunoLibrary  extends Activity{
 	}
 
 	/**
-	 * ÅÐ¶ÏÇëÇóÈ¨ÏÞ×é
+	 * ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½ï¿½ï¿½
 	 * @return
 	 */
 	protected boolean checkPermissionsAll(){
@@ -626,7 +626,7 @@ public abstract  class BlunoLibrary  extends Activity{
 	}
 
 	/**
-	 * ÇëÇóµ¥¸öÈ¨ÏÞ
+	 * ï¿½ï¿½ï¿½óµ¥¸ï¿½È¨ï¿½ï¿½
 	 * @param mPermissions
 	 * @param requestCode
 	 */
@@ -637,7 +637,7 @@ public abstract  class BlunoLibrary  extends Activity{
 	}
 
 	/**
-	 *ÇëÇóÈ¨ÏÞ
+	 *ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½
 	 * @param requestCode
 	 */
 	protected void requestPermissionAll(int requestCode, OnPermissionsResult permissionsResult){
@@ -652,7 +652,7 @@ public abstract  class BlunoLibrary  extends Activity{
 	    		for(int i = 0; i < grantResults.length; i++){
 	    			if(grantResults[i] == PackageManager.PERMISSION_DENIED){
 	    				System.out.println(permissions[i]);
-	    				//Èç¹ûÓÐÊ§°Ü
+	    				//ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½
                         mPerNoList.add(permissions[i]);
 					}
 				}
